@@ -8,13 +8,16 @@ body {
   margin: 0;
   padding: 0;
   width: 100vp;
+  background-image: url(../images/mars-11012.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* header style - beginning */
 
 header {
   display: flex;
-  background-color: #1f2937;
+  background-color: #1f2937ca;
   color: white;
   flex-direction: column;
   padding: 0px 196px 128px 196px;
@@ -80,7 +83,7 @@ a {
   display: flex;
 }
 
-.mid-header img,
+.mid-header .image-space,
 .mid-header-text {
   flex: 1;
 }
@@ -95,6 +98,12 @@ a {
   flex: initial;
 }
 
+.image-space {
+  background-image: url(../images/pexels-spacex-586030.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* header style - ending */
 
 /* upper body style - beginning */
@@ -107,7 +116,7 @@ a {
 h2 {
   font-size: 36px;
   font-weight: 900;
-  color: #1f2937;
+  color: #e5e7eb;
 }
 
 .random-info {
@@ -124,6 +133,24 @@ h2 {
   height: 164px;
 }
 
+.infos .image-space {
+  background-image: url(../images/mars-6901432.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.infos:nth-child(2) .image-space {
+  background-image: url(../images/pexels-a-koolshooter-5259414.jpg);
+}
+
+.infos:nth-child(3) .image-space {
+  background-image: url(../images/victoria-3607928.jpg);
+}
+
+.infos:nth-child(4) .image-space {
+  background-image: url(../images/concept-4455117.jpg);
+}
+
 .infos {
   display: flex;
   flex-direction: column;
@@ -137,7 +164,7 @@ h2 {
 .infos p {
   margin: 0;
   text-align: center;
-  color: #1f2937;
+  color: #e5e7eb;
   font-size: 18px;
 }
 
@@ -177,6 +204,7 @@ h2 {
 .lower-body {
   display: flex;
   padding: 128px 196px 128px 196px;
+  background-color: rgba(255, 255, 255, 0.189);
 }
 
 .call-to-action {
@@ -212,4 +240,15 @@ footer {
   color: #e5e7eb;
   justify-content: center;
   padding: 16px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+footer p img {
+  max-height: 24px;
+  padding-left: 4px;
 }
